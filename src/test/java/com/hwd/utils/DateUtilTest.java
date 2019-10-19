@@ -92,8 +92,6 @@ public class DateUtilTest {
 	public void testBefore() {
 		Date date = DateUtil.getDateByBefore();
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		
-		
 		System.out.println(format.format(date));
 	}
 }
