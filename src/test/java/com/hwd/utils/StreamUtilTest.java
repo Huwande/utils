@@ -9,14 +9,15 @@ import org.junit.Test;
 public class StreamUtilTest {
 
 	@Test
-	public void testCloseAll() {
+	public void testCloseAll(AutoCloseable ... ables) {
+		StreamUtil.closeAll(ables);
 	}
 
 	@Test
 	public void testReadTextFileInputStream() {
 		
 		try {
-			String string = StreamUtil.readTextFile(new FileInputStream("E:/test.txt"));
+			String string = StreamUtil.readTextFile(new FileInputStream("D:/type.txt"));
 	
 		System.out.println(string);
 		
@@ -32,7 +33,7 @@ public class StreamUtilTest {
 	@Test
 	public void testReadTextFileFile() {
 		
-		String string = StreamUtil.readTextFile(new File("e:/test.txt"));
+		String string = StreamUtil.readTextFile(new File("D:/type.txt"));
 		System.out.println(string);
 	}
 }

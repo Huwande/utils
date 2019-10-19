@@ -34,7 +34,14 @@ public class RandomUtil {
 		
 		return dest;
 	}
-	//方法3：返回1个1-9,a-Z之间的随机字符。 (8分)
+	/**
+	 * 
+	    * @Title: randomCharacter
+	    * @Description:调用上面的random方法，然后枚举一下
+	    * @param @return    参数
+	    * @return char    返回类型
+	    * @throws
+	 */
 	public static char randomCharacter (){
 		String str="123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
 		return str.charAt(random(0, str.length()-1));

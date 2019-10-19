@@ -29,17 +29,22 @@ public class StringUtilTest {
 
 	@Test
 	public void testHasLength() {
-		fail("Not yet implemented");
+		String str="hu";
+		
+		System.out.println(StringUtil.hasLength(str));
 	}
 
 	@Test
 	public void testHasText() {
-		fail("Not yet implemented");
+	String str="11";
+		
+		System.out.println(StringUtil.hasText(str));
 	}
 
 	@Test
 	public void testRandomSimpleChinese() {
-		fail("Not yet implemented");
+		String string = StringUtil.randomChineseString();
+		System.out.println(string);
 	}
 
 	@Test
@@ -57,7 +62,11 @@ public class StringUtilTest {
 
 	@Test
 	public void testGenerateChineseName() {
-		fail("Not yet implemented");
+		for (int i = 0; i < 100; i++) {
+			String name = StringUtil.generateChineseName();
+			System.out.println(name);
+
+		}
 	}
 
 }

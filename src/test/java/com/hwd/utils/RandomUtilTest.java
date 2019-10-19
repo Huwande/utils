@@ -8,6 +8,8 @@ public class RandomUtilTest {
 
 	@Test
 	public void testRandom() {
+		int i = RandomUtil.random(1, 3);
+		System.out.println(i);
 	}
 
 	@Test
@@ -22,9 +24,7 @@ public class RandomUtilTest {
 
 	@Test
 	public void testRandomCharacter() {
-		for (int i =0;i<4;i++) {
 			System.out.print(RandomUtil.randomCharacter());
-		}
 	}
 
 	@Test
