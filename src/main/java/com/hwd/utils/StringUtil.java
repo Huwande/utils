@@ -1,6 +1,7 @@
 package com.hwd.utils;
 
 import java.io.UnsupportedEncodingException;
+import java.text.NumberFormat;
 import java.util.Random;
 
 public class StringUtil {
@@ -162,5 +163,14 @@ public class StringUtil {
 		//名字
 	    String lastname =randomChineseString(RandomUtil.random(1, 2));
 		return firstname +lastname;
+	}
+	
+	public static String percent(Integer num,Integer total) {
+		//创建一个数值格式化对象
+		NumberFormat numberFormat = NumberFormat.getInstance();
+		//设置精确到小数点后0位
+		numberFormat.setMaximumFractionDigits(0);
+				String result = numberFormat.format((float)num/(float)total*100);
+		return result;
 	}
 }
