@@ -72,10 +72,10 @@ public class DateUtil {
 	 * 返回当前日期的昨日日期
 	 */
 	public static Date getDateByBefore() {
-		//获取
 		Calendar c = Calendar.getInstance();
-		c.set(Calendar.DATE,-1);
+		c.add(Calendar.DATE, -1);
 		return c.getTime();
+		
 	}
 	
 }
